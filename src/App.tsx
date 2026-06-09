@@ -1,8 +1,19 @@
+import { Routes } from "react-router-dom"
+import Navbar from "./layouts/Navbar"
+import { Route } from "react-router-dom"
+import Home from "./pages/Home"
+import Projects from "./pages/Projects"
+
 function App() {
   return (
-    <>
-      <h1 className="text-4xl text-blue-400">Welcome to my portfolio.</h1>
-    </>
+    <div>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </div>
   )
 }
 
