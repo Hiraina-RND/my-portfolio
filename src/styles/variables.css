@@ -1,4 +1,7 @@
 :root {
   --font-main: "Inter", sans-serif;
   --font-title: "Poppins", sans-serif;
+
+  --gray-primary: #f0f0f0;
+  --gray-secondary: #e0e0e0;
 }
