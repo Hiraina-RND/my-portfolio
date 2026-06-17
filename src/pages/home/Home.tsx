@@ -1,3 +1,5 @@
+import HeroSection from "./sections/HeroSection";
+
 function Home() {
     return (
         <main className="min-h-screen bg-[var(--gray-primary)] flex justify-center">
@@ -11,9 +13,7 @@ function Home() {
                     p-8                    
                     "
             >
-                <h1 className="text-3xl font-bold">
-                    Home page.
-                </h1>
+                <HeroSection />
             </div>
         </main>
     );
