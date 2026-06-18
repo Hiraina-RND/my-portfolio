@@ -8,20 +8,21 @@ function Navbar() {
     return (
         <nav
             className="
+                z-50
                 fixed bottom-0 left-0
                 w-full
                 flex items-center justify-center gap-7
                 border-t border-[var(--gray-secondary)]
                 bg-white/80 backdrop-blur-md
-                py-4 px-4 shadow-xl
+                p-3 shadow-xl
 
                 max-[400px]:gap-6
 
-                md:bottom-4
+                md:bottom-3
                 md:left-1/2
                 md:-translate-x-1/2
                 md:w-auto
-                md:gap-8
+                md:gap-6
                 md:border-1
                 md:border-[var(--gray-secondary)]
                 md:rounded-xl
@@ -36,7 +37,7 @@ function Navbar() {
                         after:-translate-x-1/2 after:w-2 after:h-2 after:rounded-full after:bg-black" : ""}`
                 }
             >
-                <Home size={38} />
+                <Home size={32} />
             </NavLink>
 
             <NavLink
@@ -47,7 +48,7 @@ function Navbar() {
                         after:-translate-x-1/2 after:w-2 after:h-2 after:rounded-full after:bg-black" : ""}`
                 }
             >
-                <FolderCheck size={38} />
+                <FolderCheck size={32} />
             </NavLink>
 
             <div className="hidden md:block">
@@ -59,7 +60,7 @@ function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <FaGithub size={38} />
+                <FaGithub size={32} />
             </a>
 
             <a
@@ -67,7 +68,7 @@ function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <FaLinkedinIn size={38} />
+                <FaLinkedinIn size={32} />
             </a>
 
             <div className="hidden md:block">
