@@ -1,9 +1,10 @@
-import { TextCursor } from 'lucide-react';
+import { ArrowRight, Mail, TextCursor } from 'lucide-react';
 import profil from '../../../assets/images/profil.png'
 import useTypeWriter from '../../../hooks/UseTypeWriter';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
-    const typed = useTypeWriter([ "I'm Hiraina.", "You can call me Dahira." ], 150, 1500)
+    const typed = useTypeWriter(["I'm Hiraina.", "You can call me Dahira."], 150, 1500)
 
     return (
         <section>
@@ -35,6 +36,23 @@ function HeroSection() {
                     <br />
                     Back-end first, user experience always in mind.
                 </p>
+                <div className="flex items-center gap-4 mt-2">
+                    <Link
+                        to="/projects"
+                        className="flex items-center gap-2 px-5 py-2.5 bg-[var(--gray-primary)] text-[var(--bg)] text-sm font-medium hover:opacity-80"
+                    >
+                        My work
+                        <ArrowRight size={15} />
+                    </Link>
+
+                    <a
+                        href="#contact"
+                        className="flex items-center gap-2 px-5 py-2.5 text-sm font-medium duration-400 hover:bg-[var(--gray-primary)]"
+                    >
+                        <Mail size={15} />
+                        Contact
+                    </a>
+                </div>
             </div>
         </section>
     )
