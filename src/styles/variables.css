@@ -6,4 +6,11 @@
   --gray-secondary: #e0e0e0;
 
   --text-gray: #555555;
+  --text-white: #ffff;
+  --text-black: #000000;
+
+  --bg-black: #000000;
+  --mini-bg-black: #1a1a1a;
+
+  --h2-text: 24px;
 }
