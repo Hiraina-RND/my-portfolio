@@ -26,7 +26,7 @@ function HeroSection() {
                     {typed}
                     <TextCursor className='inline animate-pulse'/>
                 </h1>
-                <h2 className="text-2xl text-[var(--text-gray)]">
+                <h2 className="text-[length:var(--h2-text)] text-[var(--text-gray)]">
                     JAVA Full-stack developer
                     <br />
                     <em>(Spring boot & React / React Admin)</em>
