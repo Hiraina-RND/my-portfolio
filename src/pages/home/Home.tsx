@@ -6,7 +6,7 @@ function Home() {
         <main className="min-h-screen bg-[var(--gray-primary)] flex justify-center">
             <div
                 className="
-                    w-full max-w-4xl
+                    w-full max-w-3xl
                     min-h-screen
                     bg-white
                     bg-[linear-gradient(var(--gray-primary)_2px,transparent_2px),linear-gradient(90deg,var(--gray-primary)_2px,transparent_2px)]
